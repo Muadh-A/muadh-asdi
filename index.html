@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muadh Asdi — Mechanical Engineering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <nav>
+    <span class="nav-logo">MA</span>
+    <div class="nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Muadh Asdi</h1>
+      <p class="hero-title">Mechanical Engineering @ UTD</p>
+      <p class="hero-tagline">Building things that move, compute, and compete.</p>
+      <a href="#projects" class="hero-cta">View Projects</a>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card" data-project="robot">
+        <div class="card-tag">Combat Robotics</div>
+        <h3>Antweight Combat Robot</h3>
+        <p>Custom 1lb combat robot designed for competition — optimized for weight, reliability, and weapon integration.</p>
+        <div class="card-tools">
+          <span>Onshape</span><span>CAD</span><span>Fabrication</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-project="prosthetic">
+        <div class="card-tag">Biomedical</div>
+        <h3>Prosthetic Hand Subsystem</h3>
+        <p>Functional actuation subsystem for an assistive prosthetic — focused on kinematics and low-force grip.</p>
+        <div class="card-tools">
+          <span>CAD</span><span>Mechanism Design</span><span>Prototyping</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-project="radar">
+        <div class="card-tag">Embedded Systems</div>
+        <h3>Arduino Radar Visualizer</h3>
+        <p>Real-time sonar sweep using HC-SR04 + servo, visualized live in a custom Processing interface.</p>
+        <div class="card-tools">
+          <span>Arduino</span><span>C++</span><span>Processing</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-chip">CAD · Onshape</div>
+      <div class="skill-chip">C++</div>
+      <div class="skill-chip">Arduino</div>
+      <div class="skill-chip">Embedded Systems</div>
+      <div class="skill-chip">Fabrication</div>
+      <div class="skill-chip">SolidWorks <span class="badge">learning</span></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="contact-sub">Open to internships and research opportunities.</p>
+    <div class="contact-links">
+      <a href="https://linkedin.com/in/muadhasdi" class="btn" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Muadh-A" class="btn" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:muadhaasdi@gmail.com" class="btn btn-outline">muadhaasdi@gmail.com</a>
+    </div>
+  </section>
+
+  <div id="modal-overlay" class="hidden">
+    <div id="modal-card" role="dialog" aria-modal="true">
+      <button id="modal-close" aria-label="Close">&times;</button>
+      <div id="modal-tag"></div>
+      <h2 id="modal-title"></h2>
+      <p id="modal-desc"></p>
+      <ul id="modal-bullets"></ul>
+      <div id="modal-tools"></div>
+    </div>
+  </div>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
